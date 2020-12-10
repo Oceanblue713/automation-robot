@@ -4,15 +4,13 @@ Library    SeleniumLibrary
 
 *** Test Case ***
 Register Test
-
-    ${speed}    get selenium speed
-    Log To Console    ${speed}
-
     open browser    http://demowebshop.tricentis.com/register    chrome
     maximize browser window
-
-    #sleep    3s
-    set selenium speed    1s
+    ${time}    get selenium timeout
+    log to console    ${time}
+    
+    set selenium timeout    10 s
+    wait until page contains    Registration    #default 5seconds
 
     select radio button   Gender    M 
     input text    name=FirstName    John
@@ -20,8 +18,4 @@ Register Test
     input text    name=Email    john.doe@mail.com
     input text    name=Password    password
     input text    name=ConfirmPassword    password
-
-    ${speed}    get selenium speed
-    Log To Console    ${speed}
-
     close browser
