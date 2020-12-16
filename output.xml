@@ -1,95 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.5 on darwin)" generated="20201215 13:52:57.719" rpa="false">
-<suite id="s1" name="Frames" source="/Users/anrisawada/20projects/automation-robot/TestCases/Frames.robot">
-<test id="s1-t1" name="Test Frames">
+<robot generator="Robot 3.2.2 (Python 3.8.5 on darwin)" generated="20201216 11:00:04.920" rpa="false">
+<suite id="s1" name="MultipleBrowsers" source="/Users/anrisawada/20projects/automation-robot/TestCases/MultipleBrowsers.robot">
+<test id="s1-t1" name="Multiple Browsers Test">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://www.selenium.dev/selenium/docs/api/java/overview-summary.html</arg>
+<arg>https://www.google.com/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20201215 13:52:57.913" level="INFO">Opening browser 'chrome' to base url 'https://www.selenium.dev/selenium/docs/api/java/overview-summary.html'.</msg>
-<status status="PASS" starttime="20201215 13:52:57.913" endtime="20201215 13:53:01.429"></status>
+<msg timestamp="20201216 11:00:05.282" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20201216 11:00:05.281" endtime="20201216 11:00:09.241"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20201215 13:53:01.429" endtime="20201215 13:53:01.591"></status>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>Frames</arg>
-</arguments>
-<msg timestamp="20201215 13:53:01.592" level="INFO">Clicking link 'Frames'.</msg>
-<status status="PASS" starttime="20201215 13:53:01.591" endtime="20201215 13:53:02.060"></status>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<arguments>
-<arg>packageListFrame</arg>
-</arguments>
-<msg timestamp="20201215 13:53:02.060" level="INFO">Selecting frame 'packageListFrame'.</msg>
-<status status="PASS" starttime="20201215 13:53:02.060" endtime="20201215 13:53:02.208"></status>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>org.openqa.selenium</arg>
-</arguments>
-<msg timestamp="20201215 13:53:02.209" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
-<status status="PASS" starttime="20201215 13:53:02.209" endtime="20201215 13:53:02.280"></status>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20201215 13:53:02.280" endtime="20201215 13:53:02.284"></status>
+<status status="PASS" starttime="20201216 11:00:09.242" endtime="20201216 11:00:09.570"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201215 13:53:04.286" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201215 13:53:02.284" endtime="20201215 13:53:04.287"></status>
+<msg timestamp="20201216 11:00:11.575" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201216 11:00:09.571" endtime="20201216 11:00:11.576"></status>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>packageFrame</arg>
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
 </arguments>
-<msg timestamp="20201215 13:53:04.288" level="INFO">Selecting frame 'packageFrame'.</msg>
-<status status="PASS" starttime="20201215 13:53:04.287" endtime="20201215 13:53:04.312"></status>
+<msg timestamp="20201216 11:00:11.577" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<status status="PASS" starttime="20201216 11:00:11.576" endtime="20201216 11:00:14.540"></status>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201216 11:00:14.541" endtime="20201216 11:00:15.031"></status>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
 <arguments>
-<arg>Wait</arg>
+<arg>1</arg>
 </arguments>
-<msg timestamp="20201215 13:53:04.312" level="INFO">Clicking link 'Wait'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20201215 13:53:05.985" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201215 13:53:05.406" endtime="20201215 13:53:05.986"></status>
+<status status="PASS" starttime="20201216 11:00:15.031" endtime="20201216 11:00:15.031"></status>
 </kw>
-<msg timestamp="20201215 13:53:06.006" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (21, 701)
-  (Session info: chrome=87.0.4280.88)
-</msg>
-<status status="FAIL" starttime="20201215 13:53:04.312" endtime="20201215 13:53:06.006"></status>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title1}</var>
+</assign>
+<msg timestamp="20201216 11:00:15.063" level="INFO">${title1} = Google</msg>
+<status status="PASS" starttime="20201216 11:00:15.032" endtime="20201216 11:00:15.064"></status>
 </kw>
-<status status="FAIL" starttime="20201215 13:52:57.912" endtime="20201215 13:53:06.007" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (21, 701)
-  (Session info: chrome=87.0.4280.88)
-</status>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${title1}</arg>
+</arguments>
+<status status="PASS" starttime="20201216 11:00:15.064" endtime="20201216 11:00:15.065"></status>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20201216 11:00:15.065" endtime="20201216 11:00:15.065"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title2}</var>
+</assign>
+<msg timestamp="20201216 11:00:15.124" level="INFO">${title2} = Bing</msg>
+<status status="PASS" starttime="20201216 11:00:15.066" endtime="20201216 11:00:15.124"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${title2}</arg>
+</arguments>
+<status status="PASS" starttime="20201216 11:00:15.124" endtime="20201216 11:00:15.125"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201216 11:00:17.127" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201216 11:00:15.125" endtime="20201216 11:00:17.127"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201216 11:00:17.128" endtime="20201216 11:00:17.531"></status>
+</kw>
+<status status="PASS" starttime="20201216 11:00:05.280" endtime="20201216 11:00:17.531" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20201215 13:52:57.720" endtime="20201215 13:53:06.008"></status>
+<status status="PASS" starttime="20201216 11:00:04.922" endtime="20201216 11:00:17.532"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Frames">Frames</stat>
+<stat pass="1" fail="0" id="s1" name="MultipleBrowsers">MultipleBrowsers</stat>
 </suite>
 </statistics>
 <errors>
