@@ -17,4 +17,5 @@ Navigation Test
 
      go back
      sleep    2s
+     
      close browser
