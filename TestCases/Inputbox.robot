@@ -23,8 +23,3 @@ TestingInputBox
     clear element text    ${"email_txt"}
     Sleep    3s
     close browser
-
-
-
-
-*** Keywords ***
