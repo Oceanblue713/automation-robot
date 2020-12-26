@@ -50,6 +50,20 @@ Without any arguments.</msg>
 <status status="PASS" starttime="20201225 17:55:17.247" endtime="20201225 17:55:23.537" critical="yes"></status>
 </test>
 <status status="PASS" starttime="20201225 17:55:17.078" endtime="20201225 17:55:23.538"></status>
+<arg>window.scrollTo(0, 2500)</arg>
+</arguments>
+<msg timestamp="20201224 16:27:09.715" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20201224 16:27:09.714" endtime="20201224 16:27:09.734"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201224 16:27:09.735" endtime="20201224 16:27:09.980"></status>
+</kw>
+<status status="PASS" starttime="20201224 16:27:04.925" endtime="20201224 16:27:09.981" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201224 16:27:04.740" endtime="20201224 16:27:09.983"></status>
 </suite>
 <statistics>
 <total>
