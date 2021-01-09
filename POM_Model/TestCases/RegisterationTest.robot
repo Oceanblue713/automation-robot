@@ -5,6 +5,10 @@ Resource    ../Resources/RegistrationKeywords.robot
 *** Variable ***
 ${Browser}    chrome
 ${SiteUrl}    http://demo.guru99.com/test/newtours/
+# robot TestCases/Reg*.robot
+# robot TestCases/*.robot  
+# pabot --processes 2 TestCases/*.robot
+# pabot --processes 2 --outputdir Results TestCases/*.robot
 
 *** Test Case ***
 Registeration Test
