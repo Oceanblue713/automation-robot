@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 Resource    ../Resources/LoginKeywords.robot
 
 *** Variable ***
-${Browser}    chrome
+${Browser}    headlessfirefox
 ${SiteUrl}    http://demo.guru99.com/test/newtours/
 ${user}    tutorial
 ${pwd}    tutorial
