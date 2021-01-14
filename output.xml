@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.5 on darwin)" generated="20210112 18:18:01.738" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.5 on darwin)" generated="20210113 17:55:08.358" rpa="false">
 <suite id="s1" name="Test1" source="/Users/anrisawada/20projects/automation-robot/Simple_Test/Test1.robot">
 <test id="s1-t1" name="Test Case 1">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://robotframework.org/</arg>
+<arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20210112 18:18:02.086" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
-<status status="PASS" starttime="20210112 18:18:02.085" endtime="20210112 18:18:07.849"></status>
+<msg timestamp="20210113 17:55:08.702" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210113 17:55:08.701" endtime="20210113 17:55:13.769"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210112 18:18:07.852" endtime="20210112 18:18:08.113"></status>
+<status status="PASS" starttime="20210113 17:55:13.770" endtime="20210113 17:55:13.980"></status>
 </kw>
-<status status="PASS" starttime="20210112 18:18:02.085" endtime="20210112 18:18:08.114" critical="yes"></status>
+<status status="PASS" starttime="20210113 17:55:08.700" endtime="20210113 17:55:13.980" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Test Case 2">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>${url}</arg>
 <arg>firefox</arg>
 </arguments>
-<msg timestamp="20210112 18:18:08.116" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<msg timestamp="20210112 18:18:08.118" level="INFO">Firefox driver log is always forced to to: /Users/anrisawada/20projects/automation-robot/geckodriver-1.log</msg>
-<status status="PASS" starttime="20210112 18:18:08.116" endtime="20210112 18:18:14.454"></status>
+<msg timestamp="20210113 17:55:13.983" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg timestamp="20210113 17:55:13.986" level="INFO">Firefox driver log is always forced to to: /Users/anrisawada/20projects/automation-robot/geckodriver-3.log</msg>
+<status status="PASS" starttime="20210113 17:55:13.982" endtime="20210113 17:55:20.480"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -34,16 +34,35 @@
 <arg>id=txtUsername</arg>
 <arg>Admin</arg>
 </arguments>
-<msg timestamp="20210112 18:18:14.454" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
-<status status="PASS" starttime="20210112 18:18:14.454" endtime="20210112 18:18:14.581"></status>
+<msg timestamp="20210113 17:55:20.481" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20210113 17:55:20.480" endtime="20210113 17:55:20.602"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20210113 17:55:20.604" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20210113 17:55:20.620" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210113 17:55:20.712" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210113 17:55:20.603" endtime="20210113 17:55:20.712"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20210113 17:55:20.713" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20210113 17:55:20.713" endtime="20210113 17:55:22.052"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210112 18:18:14.581" endtime="20210112 18:18:15.318"></status>
+<status status="PASS" starttime="20210113 17:55:22.052" endtime="20210113 17:55:22.731"></status>
 </kw>
-<status status="PASS" starttime="20210112 18:18:08.115" endtime="20210112 18:18:15.320" critical="yes"></status>
+<status status="PASS" starttime="20210113 17:55:13.981" endtime="20210113 17:55:22.732" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210112 18:18:01.739" endtime="20210112 18:18:15.322"></status>
+<status status="PASS" starttime="20210113 17:55:08.359" endtime="20210113 17:55:22.735"></status>
 </suite>
 <statistics>
 <total>
