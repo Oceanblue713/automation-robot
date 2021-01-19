@@ -19,3 +19,6 @@ Test Case 2
     Input Password    id=txtPassword    &{Login}[Password]
     Click Button    id=btnLogin
     Close Browser
+
+    Log To Console    %{username} ran this test on %{os}%
+    Log To Console    ${TEST NAME}
