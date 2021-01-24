@@ -22,3 +22,14 @@ Test Case 2
 
     Log To Console    %{username} ran this test on %{os}%
     Log To Console    ${TEST NAME}
+
+Test Case 3
+    Open Browser    ${url}    chrome
+    Login    
+    Close Browser
+
+*** Keywords ***
+Login
+    Input Text    id=txtUsername    Admin
+    Input Password    id=txtPassword    admin123
+    Click Button    id=btnLogin
